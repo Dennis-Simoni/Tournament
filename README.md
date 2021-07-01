@@ -36,17 +36,21 @@ The outcome is ordered by points, descending. In case of a tie, teams are ordere
 The result of the match refers to the first team listed.
 
 So this line:
+
 Allegoric Alaskans;Blithering Badgers;win
+
 Means that the Allegoric Alaskans beat the Blithering Badgers.
 
 This line:
 
 Courageous Californians;Blithering Badgers;loss
+
 Means that the Blithering Badgers beat the Courageous Californians.
 
 And this line:
 
 Devastating Donkeys;Courageous Californians;draw
+
 Means that the Devastating Donkeys and Courageous Californians tied.
 
 ## Running the tests
