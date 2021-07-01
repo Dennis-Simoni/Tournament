@@ -76,7 +76,9 @@ func (l *League) AddTeam(t *Team) {
 
 // BuildTable is responsible for building the output.
 func (l *League) BuildTable(w io.Writer) {
-	l.SortLeagueByPoints()
+	// check for tie.
+	l.CheckTie()
+
 	tw := tabwriter.NewWriter(w, 31, 0, 0, ' ', tabwriter.TabIndent)
 	fmt.Fprintln(tw, "Team\t| MP |  W |  D |  L |  P")
 
@@ -95,6 +97,20 @@ func (l *League) SortLeagueByPoints() {
 	})
 }
 
+func (l *League) SortByName(team1, team2 *Team) {
+	l.SortLeagueByPoints()
+	sort.Slice(l.teams, func(i, j int) bool {
+		return team1.Name > team2.Name
+	})
+}
+
+func (l *League) CheckTie() {
+	for i := 0; i < len(l.teams) -1; i++ {
+		if l.teams[i].P == l.teams[i+1].P{
+			l.SortByName(l.teams[i], l.teams[i + 1])
+		}
+	}
+}
 
 func Tally(in io.Reader, w io.Writer) error {
 	league := &League{teams: []*Team{}}
@@ -109,6 +125,8 @@ func Tally(in io.Reader, w io.Writer) error {
 	if err != nil {
 		return err
 	}
+
+	league.SortLeagueByPoints()
 
 	league.BuildTable(w)
 
