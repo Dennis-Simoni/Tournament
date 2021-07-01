@@ -11,12 +11,12 @@ Based on an input file containing which team played against which and what the o
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-| Team                       | MP | W | D | L | P |
-| :------------------------- | -------------------|
-| Devastating Donkeys        |  3 | 2 | 1 | 0 | 7 |
-| Allegoric Alaskans         |  3 | 2 | 0 | 1 | 6 |
-| Blithering Badgers         |  3 | 1 | 0 | 2 | 3 |
-| Courageous Californians    |  3 | 0 | 1 | 2 | 1 |
+| Team                       | MP |  W |  D |  L |  P |
+| -------------------------- |:--:|:--:|:--:|:--:|:--:|
+| Devastating Donkeys        |  3 |  2 |  1 |  0 |  7 |
+| Allegoric Alaskans         |  3 |  2 |  0 |  1 |  6 |
+| Blithering Badgers         |  3 |  1 |  0 |  2 |  3 |
+| Courageous Californians    |  3 |  0 |  1 |  2 |  1 |
 
 What do those abbreviations mean?
 
