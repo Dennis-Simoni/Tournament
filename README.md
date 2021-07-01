@@ -26,12 +26,13 @@ The outcome is ordered by points, descending. In case of a tie, teams are ordere
 
 ### Input looks like:
 
-Allegoric Alaskans;Blithering Badgers;win
-Devastating Donkeys;Courageous Californians;draw
-Devastating Donkeys;Allegoric Alaskans;win
-Courageous Californians;Blithering Badgers;loss
-Blithering Badgers;Devastating Donkeys;loss
-Allegoric Alaskans;Courageous Californians;win
+- Allegoric Alaskans;Blithering Badgers;win
+- Devastating Donkeys;Courageous Californians;draw
+- Devastating Donkeys;Allegoric Alaskans;win
+- Courageous Californians;Blithering Badgers;loss
+- Blithering Badgers;Devastating Donkeys;loss
+- Allegoric Alaskans;Courageous Californians;win
+
 The result of the match refers to the first team listed.
 
 So this line:
