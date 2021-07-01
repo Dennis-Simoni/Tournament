@@ -14,12 +14,12 @@ Based on an input file containing which team played against which and what the o
 
 What do those abbreviations mean?
 
-MP: Matches Played
-W: Matches Won
-D: Matches Drawn (Tied)
-L: Matches Lost
-P: Points
-A win earns a team 3 points. A draw earns 1. A loss earns 0.
+* MP: Matches Played
+* W: Matches Won
+* D: Matches Drawn (Tied)
+* L: Matches Lost
+* P: Points
+* A win earns a team 3 points. A draw earns 1. A loss earns 0.
 
 The outcome is ordered by points, descending. In case of a tie, teams are ordered alphabetically.
 
