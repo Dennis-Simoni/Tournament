@@ -28,6 +28,28 @@ Allegoric Alaskians            |  3 |  2 |  0 |  1 |  6
 Blithering Badgers             |  3 |  1 |  0 |  2 |  3
 Courageous Californians        |  3 |  0 |  1 |  2 |  1
 `[1:], // [1:] = strip initial readability newline
+	},{
+		description: "ignore comments and newlines",
+		input: `
+
+Allegoric Alaskians;Blithering Badgers;win
+Devastating Donkeys;Allegoric Alaskians;win
+# Catastrophic Loss of the Californians
+Courageous Californians;Blithering Badgers;loss
+
+Blithering Badgers;Devastating Donkeys;loss
+Allegoric Alaskians;Courageous Californians;win
+Devastating Donkeys;Courageous Californians;draw
+
+
+`,
+		expected: `
+Team                           | MP |  W |  D |  L |  P
+Devastating Donkeys            |  3 |  2 |  1 |  0 |  7
+Allegoric Alaskians            |  3 |  2 |  0 |  1 |  6
+Blithering Badgers             |  3 |  1 |  0 |  2 |  3
+Courageous Californians        |  3 |  0 |  1 |  2 |  1
+`[1:],
 	},
 }
 

@@ -117,6 +117,7 @@ func Tally(in io.Reader, w io.Writer) error {
 
 func readData(input io.Reader) ([][]string, error) {
 	reader := csv.NewReader(input)
+	reader.Comment = '#'
 	res, err := reader.ReadAll()
 	if err != nil {
 		return nil, err
