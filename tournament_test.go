@@ -87,6 +87,13 @@ Devastating Donkeys            |  3 |  0 |  1 |  2 |  1
 	},
 }
 
+var errorTestCases = []string{
+	"Bla;Bla;Bla",
+	"Devastating Donkeys_Courageous Californians;draw",
+	"Devastating Donkeys@Courageous Californians;draw",
+	"Devastating Donkeys;Allegoric Alaskians;dra",
+}
+
 func TestTallyHappy(t *testing.T) {
 	for _, tt := range happyTestCases {
 		reader := strings.NewReader(tt.input)
@@ -101,6 +108,17 @@ func TestTallyHappy(t *testing.T) {
 		if actual != tt.expected {
 			t.Fatalf("Tally for input named %q was expected to return...\n%s\n...but returned...\n%s",
 				tt.description, tt.expected, actual)
+		}
+	}
+}
+
+func TestTallyError(t *testing.T) {
+	for _, s := range errorTestCases {
+		reader := strings.NewReader(s)
+		var buffer bytes.Buffer
+		err := Tally(reader, &buffer)
+		if err == nil {
+			t.Fatalf("Tally for input %q should have failed but didn't.", s)
 		}
 	}
 }
