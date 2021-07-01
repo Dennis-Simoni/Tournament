@@ -36,7 +36,6 @@ The outcome is ordered by points, descending. In case of a tie, teams are ordere
 The result of the match refers to the first team listed.
 
 So this line:
-
 Allegoric Alaskans;Blithering Badgers;win
 Means that the Allegoric Alaskans beat the Blithering Badgers.
 
