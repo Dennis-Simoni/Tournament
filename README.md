@@ -5,12 +5,6 @@ TDD with go, building a small football competition app.
 
 Based on an input file containing which team played against which and what the outcome was, the program produces a file with a table like this:
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 | Team                       | MP |  W |  D |  L |  P |
 | -------------------------- |:--:|:--:|:--:|:--:|:--:|
 | Devastating Donkeys        |  3 |  2 |  1 |  0 |  7 |
