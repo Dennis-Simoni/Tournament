@@ -19,7 +19,8 @@ What do those abbreviations mean?
 * D: Matches Drawn (Tied)
 * L: Matches Lost
 * P: Points
-* A win earns a team 3 points. A draw earns 1. A loss earns 0.
+
+A win earns a team 3 points. A draw earns 1. A loss earns 0.
 
 The outcome is ordered by points, descending. In case of a tie, teams are ordered alphabetically.
 
