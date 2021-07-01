@@ -112,11 +112,11 @@ func (l *League) CheckTie() {
 	}
 }
 
+// Tally is reading the data input, converting it to a meaningful structure and producing an output
 func Tally(in io.Reader, w io.Writer) error {
 	league := &League{teams: []*Team{}}
-
-
 	data, err := readData(in)
+
 	if err != nil {
 		return err
 	}
@@ -127,9 +127,7 @@ func Tally(in io.Reader, w io.Writer) error {
 	}
 
 	league.SortLeagueByPoints()
-
 	league.BuildTable(w)
-
 	return nil
 }
 

@@ -25,7 +25,7 @@ A win earns a team 3 points. A draw earns 1. A loss earns 0.
 
 The outcome is ordered by points, descending. In case of a tie, teams are ordered alphabetically.
 
-### Input looks like:
+### Input data example:
 
 ```text
 Allegoric Alaskans;Blithering Badgers;win
